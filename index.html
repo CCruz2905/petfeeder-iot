@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="raphael-2.1.4.min.js"></script>
+    <script src="justgage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<title>Pet feeder</title>
+
+</head>
+<body style="text-align: center; background-image: url(https://i.pinimg.com/736x/58/05/86/580586acb754117b459ec66a04a95580.jpg);">
+
+    <div class="float-none rounded border border-dark p-5 mb-2 bg-light bg-gradient text-dark" style="margin-top: 4%; margin-left: 20%; margin-right: 20%;">
+		<h1>Alimentador de mascotas</h1>
+
+		<button class="btn btn-success mt-5" id="on" value="on">Alimentar</button>
+
+		<h2 class="mt-5" id="status">Los gatos esperan su comida</h2>
+		<img id="img" class="img-fluid" style="width: 450px; height: 450px; object-fit: cover; border-radius: 10px; border: solid 2px black" src="https://lh3.googleusercontent.com/pw/ACtC-3ftbysZbOe0u26JMFpxa2Y2XapWY_CuUYrUwfj10jkhcTGPYQz4FHUHavF-aYNWjzJ6E7NYr8g6-Q2PCL5uwkNuz_5NsykaGyrm2FoBze4yvzKleQpG0QOlDeIbobXLmxfjEKyjwGfKAvJEp0Aae6_m=w732-h975-no?authuser=0" alt="catWaiting" />
+
+        <h1 style="margin-top: 50px;">Monitoreo</h1>
+        <div id="humedad" style="margin: 0 auto; height: 350px; width: 400px;"></div>
+
+        <h1 id="conection" style="display: none;">Sin conexión</h1>
+        
+	</div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
