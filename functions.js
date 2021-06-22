@@ -107,6 +107,16 @@ const request = ( data, status ) => {
     if (status == "success") {
 		let variable = parseFloat(data.result);
 		variable = variable.toFixed(2);
+
+        if ( variable < 90 ) {
+
+            btnON.disabled = false;
+
+            c.refresh( variable );
+
+		    setTimeout(getReading, 1000);
+
+        }
 	}
 	else {
 		alert("There was a problem");
