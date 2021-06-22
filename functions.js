@@ -107,30 +107,6 @@ const request = ( data, status ) => {
     if (status == "success") {
 		let variable = parseFloat(data.result);
 		variable = variable.toFixed(2);
-
-        if ( variable < 90 ) {
-
-            btnON.disabled = false;
-
-            c.refresh( variable );
-
-		    setTimeout(getReading, 1000);
-
-        } else {
-
-            c.refresh( variable );
-            Swal.fire({
-                title: 'El alimento está demasiado humedo, debes cambiarlo',
-                width: 600,
-                icon: 'error',
-                padding: '3em',
-                background: '#fff',
-                backdrop: '#FF0000'
-            });
-            btnON.disabled = true;
-            setTimeout(request, 1000);
-
-        }
 	}
 	else {
 		alert("There was a problem");
